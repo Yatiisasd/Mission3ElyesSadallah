@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire QCM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Questionnaire QCM</h1>
+    <form id="qcmForm">
+        <ol>
+            <li data-correct="Paris">
+                <p>Quelle est la capitale de la France ?</p>
+                <label>
+                    <input type="radio" name="q1" value="Paris"> Paris
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="Londres"> Londres
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="Berlin"> Berlin
+                </label>
+            </li>
+            
+            <li data-correct="8">
+                <p>Combien de planètes gravitent autour du soleil dans notre système solaire ?</p>
+                <label>
+                    <input type="radio" name="q2" value="5"> 5
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="7"> 7
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="8"> 8
+                </label>
+            </li>
+
+                <li data-correct="Jupiter">
+                <p>Quelle est la plus grande planète du système solaire ?</p>
+                <label>
+                    <input type="radio" name="q3" value="Mercure"> Mercure
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="Vénus"> Vénus
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="Jupiter"> Jupiter
+                </label>
+            </li>
+
+
+                <li data-correct="H20">
+                <p>Quelle est la formule chimique de l'eau ?</p>
+                <label>
+                    <input type="radio" name="q4" value="H2O2"> H2O2
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="CO2"> CO2
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="H2O"> H2O
+                </label>
+            </li>
+                <li data-correct="Leonardo da Vinci">
+                <p>Qui a peint la Joconde ?</p>
+                <label>
+                    <input type="radio" name="q5" value="Vincent van Gogh"> Vincent van Gogh
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="Pablo Picasso"> Pablo Picasso
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="Leonardo da Vinci"> Leonardo da Vinci
+                </label>
+            </li>
+
+                <li data-correct="Yen">
+                <p>Quelle est la monnaie officielle du Japon ?</p>
+                <label>
+                    <input type="radio" name="q6" value="Yen"> Yen
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="Euro"> Euro
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="Dollar américain"> Dollar américain
+                </label>
+            </li>
+
+                <li data-correct="O2">
+                <p>Quel est le symbole chimique de l'oxygène ?</p>
+                <label>
+                    <input type="radio" name="q7" value="O2"> O2
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="Ox"> Ox
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="O"> O
+                </label>
+            </li>
+
+                <li data-correct="William Shakespeare">
+                <p>Qui a écrit la pièce de théâtre "Roméo et Juliette" ?</p>
+                <label>
+                    <input type="radio" name="q8" value="William Shakespeare"> William Shakespeare
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="Victor Hugo"> Victor Hugo
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="Charles Dickens"> Charles Dickens
+                </label>
+            </li>
+
+                <li data-correct="Sahara">
+                <p>Quel est le plus grand désert du monde ?</p>
+                <label>
+                    <input type="radio" name="q9" value="Sahara"> Sahara
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="Gobi"> Gobi
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="Atacama"> Atacama
+                </label>
+            </li>
+
+                <li data-correct="7">
+                <p>Combien de continents y a-t-il sur Terre ?</p>
+                <label>
+                    <input type="radio" name="q10" value="4"> 4
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="6"> 6
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="7"> 7
+                </label>
+            </li>
+        <button type="button" id="clearSelections">Effacer les sélections</button>
+        <button type="button" id="correction">Correction</button>
+        <button type="button" id="showCorrigé">Corrigé</button>
+    </form>
+    <div id="score"></div>
+    <script src="script.js"></script>
+</body>
+</html>
